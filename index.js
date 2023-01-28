@@ -13,7 +13,7 @@ const displayDecimalInput = document.getElementById("display-decimal-input");
 inputField.addEventListener("keypress",function(e){
     if(e.keyCode ===13){
         var value = e.target.value;
-        value = Number(value)
+        value = parseInt(value)
         displayDecimalInput.value = generateDecimalCode(value)
         displayBinaryInput.value= gelerateBinaryCode(value)
         displayHexadecimalInput.value = generateHexadecimalCode(value).toUpperCase();
